@@ -6,11 +6,11 @@ interface Props {
     logo: string
     socialSrc: string[]
     contactSrc: string[]
+    links: string[]
 }
 
-function footer({ indexSelected, logo, socialSrc, contactSrc }: Props) {
+function footer({ indexSelected, logo, socialSrc, contactSrc, links }: Props) {
     const elementsNav = ['Home', 'About', 'Services', 'Projects', 'Contact'];
-    const hrefsNav = ['./#/home', './#/about', './#/services', './#/projects', './#/contact'];
 
     const elementsContact = ['(289) 681-3004', 'darwinconstruction@outlook.com', '310 Barton St E Hamilton, ON']
     const hrefsContact = ['tel:+12896813004', 'mailto:darwinconstruction@outlook.com', 'https://maps.app.goo.gl/hDeMg2C1bCQN6SsT7']
@@ -34,7 +34,7 @@ function footer({ indexSelected, logo, socialSrc, contactSrc }: Props) {
                         </div>
                         <p className='catchy-phrase-bottom'>Your vision, our expertise. Let's create extraordinary things together.</p>
                     </div>
-                    <Navigator title='Navigator' elements={elementsNav} hrefs={hrefsNav} newPage={false} indexSelected={indexSelected} />
+                    <Navigator title='Navigator' elements={elementsNav} hrefs={links} newPage={false} indexSelected={indexSelected} />
                     <Navigator title='Contact Us' elements={elementsContact} hrefs={hrefsContact} imgs={contactSrc} />
                     <Navigator title='Social Media' elements={elementsSocial} hrefs={hrefSocial} imgs={socialSrc} />
                 </div>

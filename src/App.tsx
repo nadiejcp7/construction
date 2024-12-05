@@ -44,7 +44,7 @@ const servicesSrc = [rent, commercial, sustainable]
 export default function App() {
 
   return (
-    <HashRouter basename='/construction'>
+    <HashRouter>
       <Routes>
         <Route index element={<HomeApp indexSelected={0} />} />
         <Route path="/home" element={<HomeApp indexSelected={0} />} />
@@ -62,10 +62,11 @@ interface Props {
   indexSelected: number
 }
 
+const links = ['./home', './about', './services', './projects', './contact'];
 function HeaderApp({ indexSelected }: Props) {
   return (
     <>
-      <Header indexSelected={indexSelected} logo={logo} phone={phoneHeader} map={mapHeader} />
+      <Header indexSelected={indexSelected} logo={logo} phone={phoneHeader} map={mapHeader} links={links} />
     </>
   );
 }
@@ -74,7 +75,7 @@ function HeaderApp({ indexSelected }: Props) {
 function FooterApp({ indexSelected }: Props) {
   return (
     <>
-      <Footer indexSelected={indexSelected} logo={logo} socialSrc={socialSrc} contactSrc={contactSrc} />
+      <Footer indexSelected={indexSelected} logo={logo} socialSrc={socialSrc} contactSrc={contactSrc} links={links} />
     </>
   );
 }

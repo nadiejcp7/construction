@@ -7,11 +7,11 @@ interface Props {
     logo: string
     phone: string
     map: string
+    links: string[]
 }
 
-export default function header({ existsButton = true, indexSelected, logo, phone, map }: Props) {
+export default function header({ existsButton = true, indexSelected, logo, phone, map, links }: Props) {
     const elements = ['Home', 'About', 'Services', 'Projects', 'Contact'];
-    const links = ['./#/home', './#/about', './#/services', './#/projects', './#/contact'];
 
     const [opened, setOpened] = useState(false)
 
