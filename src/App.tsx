@@ -44,7 +44,7 @@ const servicesSrc = [rent, commercial, sustainable]
 export default function App() {
 
   return (
-    <HashRouter>
+    <HashRouter basename='/construction'>
       <Routes>
         <Route index element={<HomeApp indexSelected={0} />} />
         <Route path="/home" element={<HomeApp indexSelected={0} />} />

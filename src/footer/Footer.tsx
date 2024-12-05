@@ -10,7 +10,7 @@ interface Props {
 
 function footer({ indexSelected, logo, socialSrc, contactSrc }: Props) {
     const elementsNav = ['Home', 'About', 'Services', 'Projects', 'Contact'];
-    const hrefsNav = ['/home', '/about', '/services', '/projects', '/contact'];
+    const hrefsNav = ['./#/home', './#/about', './#/services', './#/projects', './#/contact'];
 
     const elementsContact = ['(289) 681-3004', 'darwinconstruction@outlook.com', '310 Barton St E Hamilton, ON']
     const hrefsContact = ['tel:+12896813004', 'mailto:darwinconstruction@outlook.com', 'https://maps.app.goo.gl/hDeMg2C1bCQN6SsT7']
