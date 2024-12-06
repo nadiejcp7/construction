@@ -2,7 +2,7 @@
   "name": "darwin",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nadiejcp7.github.io/construction/#/",
+  "homepage": "https://nadiejcp7.github.io/construction/",
   "type": "module",
   "scripts": {
     "dev": "vite",

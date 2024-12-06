@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './home';
 import About from './about';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NotFound from './notFound';
 import Services from './services';
 import Projects from './projects';
@@ -44,17 +44,15 @@ const servicesSrc = [rent, commercial, sustainable]
 export default function App() {
 
   return (
-    <HashRouter>
-      <Routes>
-        <Route index element={<HomeApp indexSelected={0} />} />
-        <Route path="/home" element={<HomeApp indexSelected={0} />} />
-        <Route path="/about" element={<AboutApp indexSelected={1} />} />
-        <Route path="/services" element={<ServicesApp indexSelected={2} />} />
-        <Route path="/projects" element={<ProjectsApp indexSelected={3} />} />
-        <Route path="/contact" element={<ContactApp indexSelected={4} />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </HashRouter>
+    <Routes>
+      <Route index element={<HomeApp indexSelected={0} />} />
+      <Route path="/home" element={<HomeApp indexSelected={0} />} />
+      <Route path="/about" element={<AboutApp indexSelected={1} />} />
+      <Route path="/services" element={<ServicesApp indexSelected={2} />} />
+      <Route path="/projects" element={<ProjectsApp indexSelected={3} />} />
+      <Route path="/contact" element={<ContactApp indexSelected={4} />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 
