@@ -60,7 +60,7 @@ interface Props {
   indexSelected: number
 }
 
-const links = ['./home', './about', './services', './projects', './contact'];
+const links = ['./#/home', './#/about', './#/services', './#/projects', './#/contact']; //['./home', './about', './services', './projects', './contact']; 
 function HeaderApp({ indexSelected }: Props) {
   return (
     <>
