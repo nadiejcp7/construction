@@ -69,4 +69,8 @@ div {
     padding: 0;
     width: 100%;
   }
+
+  :root {
+    background-image: url('./assets/backCell.jpg');
+  }
 }
