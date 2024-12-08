@@ -74,9 +74,9 @@ export default function Contact({ phone, mail, map }: Props) {
                                     </a>
                                 </div>
                                 <div className="contact-general-data">
-                                    <a href="mailto:darwinconstruction@outlook.com" target="_blank" className="items-header no-border">
+                                    <a href="mailto:darwinconstructinc@gmail.com" target="_blank" className="items-header no-border">
                                         <img src={mail} alt="Location Icon" width="20px" height="20px" />
-                                        darwinconstruction@outlook.com
+                                        darwinconstructinc@gmail.com
                                     </a>
                                 </div>
                                 <div className="contact-general-data">

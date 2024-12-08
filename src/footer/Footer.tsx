@@ -12,11 +12,14 @@ interface Props {
 function footer({ indexSelected, logo, socialSrc, contactSrc, links }: Props) {
     const elementsNav = ['Home', 'About', 'Services', 'Projects', 'Contact'];
 
-    const elementsContact = ['(289) 681-3004', 'darwinconstruction@outlook.com', '310 Barton St E Hamilton, ON']
-    const hrefsContact = ['tel:+12896813004', 'mailto:darwinconstruction@outlook.com', 'https://maps.app.goo.gl/hDeMg2C1bCQN6SsT7']
+    const elementsContact = ['(289) 681-3004', 'darwinconstructinc@gmail.com', '310 Barton St E Hamilton, ON']
+    const hrefsContact = ['tel:+12896813004', 'mailto:darwinconstructinc@gmail.com', 'https://maps.app.goo.gl/hDeMg2C1bCQN6SsT7']
 
-    const elementsSocial = ['YouTube', 'TikTok', 'Instagram', 'Facebook', 'LinkedIn']
-    const hrefSocial = ['YouTube', 'TikTok', 'Instagram', 'Facebook', 'LinkedIn']
+    const elementsSocial = ['YouTube', 'TikTok', 'Instagram', 'Facebook']
+    const hrefSocial = ['https://www.youtube.com/channel/UCKRg5ErjbF4lnaijgZ4AJag',
+        'https://www.tiktok.com/@darwinconstructioninc',
+        'https://www.instagram.com/darwinconstructioninc',
+        'https://www.facebook.com/darwinconstructinc/']
 
     return (<>
         <div className='hidden footer-container'>
